@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  background: #262a2f;
+}
+
+.containor {
+  width: 400px;
+  padding: 35px 25px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 10px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.containor p {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.containor input {
+  width: 100%;
+  height: 50px;
+  outline: 0px;
+  padding: 10px;
+  margin: 10px 0px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.containor button {
+  width: 100%;
+  height: 50px;
+  background: #494eea;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+#img-box {
+  width: 200px;
+  border: 5px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+#img-box img {
+  width: 100%;
+  padding: 10px;
+}
+
+#img-box.show-img {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
